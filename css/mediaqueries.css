@@ -1,0 +1,51 @@
+/*
+	MEDIA QUERIES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+@media (max-width: 1297px){
+
+}
+
+@media (max-width: 991px){
+	.promocional img{
+		width: auto !important;
+	}
+
+	.promocional-text{
+		left: 10% !important;
+	}
+
+	.sobreNosotros{
+		max-width: 90% !important;
+	}
+
+	.novedades-item .item{
+		width: 95% !important;
+	}
+}
+
+@media (max-width: 767px){
+	body{
+		font-size: 14px;
+	}
+
+	.header-container .logo{
+		top: 0 !important;
+	}
+
+	.socialMedia{
+		float: none !important;
+		margin: 0 auto !important;
+		padding: 0.5em;
+	}
+
+	.promocional-text{
+		display: none;
+	}
+}
+
+@media (max-width: 415px){
+	body{
+		font-size: 12px;
+	}
+}
