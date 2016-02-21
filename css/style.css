@@ -53,7 +53,6 @@ header{
 .header-container{
 	text-align: center;
 	background: rgba(255,255,255,0.8);
-	height: 7em;
 	position: relative;
 	z-index: 3;
 }
@@ -62,7 +61,7 @@ header{
 	width: 8em;
 	margin: 0 auto;
 	position: relative;
-	top: 0.6em;
+	top: 1em;
 }
 
 .header-container .logo img{
@@ -127,6 +126,11 @@ nav ul li a:hover{
 	z-index: 1;
 }
 
+.promocional img{
+	height: 32em;
+	width: 100%;
+}
+
 .promocional-text{
 	color: white;
 	width: 24em;
@@ -149,4 +153,87 @@ nav ul li a:hover{
 	font-size: 1em;
 	background: #ff931e;
 	padding: .3em;
+}
+
+.sobreNosotros{
+	max-width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+p{
+	font-family: 'Roboto-Light',sans-serif;
+	font-size: 1em;
+	line-height: 1.6em;
+	margin-top: 0;
+}
+
+.sobreNosotros h2{
+	font-family: 'MyriadPro-Semibold',sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 0.3em;
+}
+
+.novedades{
+	margin: 1em auto;
+	max-width: 80%;
+}
+
+.novedades .title-section{
+	border-bottom: 3px solid #ff931e
+}
+
+.novedades .title-section h4{
+	font-size: 1em;
+	font-family: 'Roboto-Regular',sans-serif;
+	margin: 0 0 0.5em 0.6em;
+}
+
+#novedades:before{
+	content: url("../img/iconos_reloj.svg");
+	width: 1.5em;
+	margin-right: 0.2em;
+	display: inline-block;
+	position: relative;
+	top: 0.3em;
+}
+
+#especialidades:before{
+	content: url("../img/iconos_mochila.svg");
+	width: 1.5em;
+	margin-right: 0.2em;
+	display: inline-block;
+	position: relative;
+	top: 0.3em;
+}
+
+.novedades-item{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.novedades-item .item{
+	width: 30%;
+	padding-top: 1em;
+}
+
+.novedades-item .item:nth-child(2n){
+	margin: 0 1em;
+}
+
+.novedades-item .item h2{
+	margin-bottom: 0.4em;
+	font-size: 1.2em;
+	font-family: 'MyriadPro-Semibold',sans-serif;
+	text-align: center; 
+}
+
+.novedades-item .item h2:before{
+	content: url("../img/iconos_pizza.svg");;
+	display: inline-block;
+	margin-right: 0.2em;
+	position: relative;
+	top: 0.3em;
+	width: 1.5em;
 }
