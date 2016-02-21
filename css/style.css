@@ -44,17 +44,25 @@ body{
 	margin: 0;
 }
 
+header{
+	position: relative;
+	margin-bottom: 3em;
+	height: 32em;
+}
+
 .header-container{
 	text-align: center;
 	background: rgba(255,255,255,0.8);
 	height: 7em;
+	position: relative;
+	z-index: 3;
 }
 
 .header-container .logo{
 	width: 8em;
 	margin: 0 auto;
 	position: relative;
-	top: 1em;
+	top: 0.6em;
 }
 
 .header-container .logo img{
@@ -85,6 +93,8 @@ nav{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	position: relative;
+	z-index: 2;
 }
 
 nav ul{
@@ -110,10 +120,20 @@ nav ul li a:hover{
 	background: red;
 }
 
+.promocional{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
 .promocional-text{
 	color: white;
 	width: 24em;
 	font-family: 'Roboto-Medium',sans-serif;
+	position: absolute;
+	top: 15em;
+	left: 25%;
 }
 
 .promocional-text h1{
