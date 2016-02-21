@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'iconitos';
+    src:    url('../fonts/iconitos.eot?n6506y');
+    src:    url('../fonts/iconitos.eot?n6506y#iefix') format('embedded-opentype'),
+        url('../fonts/iconitos.ttf?n6506y') format('truetype'),
+        url('../fonts/iconitos.woff?n6506y') format('woff'),
+        url('../fonts/iconitos.svg?n6506y#iconitos') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconitos' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconos_facebook .path1:before {
+    content: "\e900";
+    color: rgb(59, 89, 147);
+}
+.icon-iconos_facebook .path2:before {
+    content: "\e901";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-iconos_google .path1:before {
+    content: "\e902";
+    color: rgb(216, 75, 57);
+}
+.icon-iconos_google .path2:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-iconos_google .path3:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-iconos_linkedin:before {
+    content: "\e905";
+}
+.icon-iconos_twitter .path1:before {
+    content: "\e906";
+    color: rgb(0, 167, 233);
+}
+.icon-iconos_twitter .path2:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
