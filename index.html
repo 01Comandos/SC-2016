@@ -42,19 +42,19 @@
 			<!--LEFT-->
 			<ul>
 				<li>
-					<a href="#">Sobre Nosotros</a>
+					<a href="#sobreNosotros">Sobre Nosotros</a>
 				</li>
 				<li>
-					<a href="#">Novedades</a>
+					<a href="#novedades-container">Novedades</a>
 				</li>
 			</ul>
 
 			<!--RIGHT-->
 			<ul>
 				<li>
-					<a href="#">Especialidades</a></li>
+					<a href="#especialidades-container">Especialidades</a>
 				<li>
-					<a href="#">Contacto</a>
+					<a href="#googlemaps">Contacto</a>
 				</li>
 			</ul>
 		</nav>
@@ -70,13 +70,13 @@
 	</header>
 
 	<!--SOBRE NOSOTROS-->
-	<section class="sobreNosotros">
+	<section class="sobreNosotros" id="sobreNosotros">
 		<h2>20 años formando los mejores Profesionales</h2>
 		<p>Somos una institución educativa de carácter oficial que ofrece el servicio de Educación Formal en niveles de educación media académica. Ofrecemos a los estudiantes distintos tipos de especializaciones de tecnología media, logrando así formar jóvenes profesionales altamente capacitados para el ambito laboral. Además se han implementado los programas de Aceleración del Aprendizaje y Círculos de Aprendizaje. </p>
 	</section>
 
 	<!--NOVEDADES-->
-	<section class="novedades">
+	<section class="novedades" id="novedades-container">
 		<div class="title-section">
 			<h4 id="novedades">Novedades</h4>
 		</div>
@@ -103,7 +103,7 @@
 	</section>
 
 	<!--ESPECIALIDADES-->
-	<section class="novedades">
+	<section class="novedades" id="especialidades-container">
 		<div class="title-section">
 			<h4 id="especialidades">Especialidades</h4>
 		</div>
@@ -167,7 +167,7 @@
 	</section>
 
 	<!--GOOGLE MAPS Y FORMULARIO DE CONTACTO-->
-	<section class="googlemaps">
+	<section class="googlemaps" id="googlemaps">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4665.6494366714705!2d-64.16490000223398!3d10.474797440127267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1455923956533" width="100%" height="100% " frameborder="0" style="border:0" allowfullscreen></iframe>
 
 		<!--FORMULARIO-->
@@ -196,6 +196,32 @@
 	<footer>
 		<h6>Institución Educativa Carlos Lleras Restrepo - Todos los derechos reservados - 2016</h6>
 	</footer>
+
+	
+	<!--SCRIPT PARA DESPLAZAMIENTOS DE TAGS-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+		     $('a[href*=#]').click(function() {
+		     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		         && location.hostname == this.hostname) {
+
+		             var $target = $(this.hash);
+
+		             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+		             if ($target.length) {
+
+		                 var targetOffset = $target.offset().top;
+
+		                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+		                 return false;
+		            }
+		       }
+		   });
+		});
+	</script>
 	
 </body>
 </html>

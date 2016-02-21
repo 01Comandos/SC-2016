@@ -64,7 +64,8 @@ header{
 	top: 1em;
 }
 
-.header-container .logo img{
+.header-container .logo img,
+.googlemaps-container figure img{
 	width: 100%;
 }
 
@@ -253,6 +254,100 @@ p{
 	border-radius: 50%;
 }
 
-.novedades-item .item .item-body{
+.novedades-item .item .item-body,
+.novedades-item .item .item-body p{
 	text-align: center;
+}
+
+.googlemaps{
+	background: #eeeeee;
+	height: 30em;
+	margin-top: 3em;
+	position: relative;
+}
+
+.googlemaps iframe{
+	pointer-events: none;
+}
+
+.googlemaps-container{
+	background: #3fa9f5;
+	max-width: 21em;
+	border-radius: 3px;
+	padding: 0.8em;
+	position: absolute;
+	top: 2.5em;
+	right: 20%;
+}
+
+.googlemaps-container figure{
+	width: 6em;
+	display: inline-block;
+	margin: 0;
+}
+
+.google-text{
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.5em 0 0 0.5em;
+}
+
+.google-text span,
+.googlemaps-container form span{
+	display: block;
+	text-align: left;
+	color: white;
+	font-size: 0.9em;
+	font-family: 'Roboto-Regular',sans-serif;
+}
+
+.googlemaps-container form span{
+	margin-bottom: 0.5em;
+	text-align: center !important;
+}
+
+.googlemaps-container form input{
+	border: 0;
+	height: 2.5em;
+	margin-bottom: 0.4em;
+	padding: 0.2em;
+	width: 100%;
+	border-radius: 3px;
+	text-indent: 0.8em;
+}
+
+.googlemaps-container form textarea{
+	border: 0;
+	height: 4.3em;
+	padding: 0.2em;
+	text-indent: 0.8em;
+	width: 100%;
+	border-radius: 3px;
+	resize: none;
+}
+
+.submit{
+	text-align: center;
+}
+
+.submit input{
+	background: red;
+	color: white;
+	cursor: pointer;
+	margin-top: 0.5em;
+	width: 8em !important;
+}
+
+
+footer{
+	background: #ff931e;
+	text-align: center;
+}
+
+footer h6{
+	margin: 0;
+	font-size: 0.8em;
+	font-family: 'Roboto-Regular',sans-serif;
+	color: white;
+	padding: 0.5em;
 }
